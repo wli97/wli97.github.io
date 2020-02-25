@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wen Quan Li</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+    </div>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">about</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">work</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">portrait</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <h1 style="color: #001acc;">Wen Quan <span style="color: #004dff">Li</span></h1>
+        <h2>Build products to meet people's needs in the way they love.</h2>
+        <div id="menu">
+            <a onclick="showabout()"><button class="btn_one">about</button></a>
+            <a onclick="showwork()"><button class="btn_one">work</button></a>
+        </div>
+        <table>
+                <tr>
+                    <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social" href="https://www.linkedin.com/in/wenquanli" target="_blank"><i class="fab fa-linkedin"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social" href="https://www.youtube.com/user/LWQ97/" target="_blank"><i class="fab fa-youtube"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social" href="https://www.soundcloud.com/makeitsaxy" target="_blank"><i class="fab fa-soundcloud"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social" href="https://www.github.com/wli97" target="_blank"><i class="fab fa-github"></i></a></td>
+                </tr>
+        </table>
+    </div>
+    <div id="work_container" class="container">
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <h1>works.</h1>
+        <section>
+            <h2><u>Software Engineer Intern @ Microsoft</u></h2>
+            <p>
+                Integrated convenient features such as cross-device copy/paste/screenshot and computer vision backed <span style="color:#ffb300">Accessibility</span> features such as screen narration with <1s latency using Azure Cloud Service/Narrator/Jaws, all features conformant to WCAG standards, into the MS Your Phone App.
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;XAML</div>
+                <div><i class="fas fa-circle"></i>&nbsp;C++</div>
+                <div><i class="fas fa-circle"></i>&nbsp;C#</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Azure Cognitive Services</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Jaws API</div>
+            </div>
+            <a class="btn_two" href="https://www.youtube.com/watch?v=BfqfWAbvlK8" target="_blank">Product Release Video</a>
+        </section>
+        <section>
+            <h2><u>Product Advisor, Engineer @ Opal Health</u></h2>
+            <p>
+                Worked on features like current waiting time for patients in my treatment hospital. Released in 2018. Currently works on patient matching product.
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;Angular</div>
+                <div><i class="fas fa-circle"></i>&nbsp;PHP</div>
+                <div><i class="fas fa-circle"></i>&nbsp;NodeJs</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Firebase</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Python</div>
+            </div>
+            <a class="btn_two" href="http://www.opalmedapps.com/" target="_blank">Product Landing Page</a>
+        </section>
+        <section>
+            <h2><u>Product Manager Intern @ TD Insurance</u></h2>
+            <p>
+                Worked on the delivery of the inter-institutional decentralized claims record system to help Canadians fighting insurance fraud.
+            </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;Ethereum</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Application</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Roadmap</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Actuary</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Risk assessment</div>
+            </div>
+        </section>
+    </div>
+    <div id="about_container" class="container">
+            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+            <h1>about me.</h1>
+            <section>
+                <h2><u>Story</u></h2>
+                <p>
+                    My story with coding started very late. In fact, I have never been interested in CS (music and math all the way!) until an unfortunate illness hit me just before university.
+                    My 6 months of experience at hospital allowed me to discover people's pain points resulting from the lack of transparency and automation.
+                    I realized the potential of CS at bringing value to our society and decided to pursue a career in this field. Now, my goal is to be able to build products that will truly benefit the people in a lovable way, so much that they will tell their friends "Try this, I really like it!".
+                </p>
+            </section>
+            <section>
+                <h2><u>Current progress</u></h2>
+                <p>
+                    I am currently a product engineer at A* who recently graduated from McGill University, majoring in Stats & CS with a minor in Finance.
+                    Still learning the different aspects of creating a great product, technical, design, business or legal.
+                    In my free time, I love composition and improvisation as a jazz/pop saxophonist. Moreover, I am committed to the Childhood Cancer Society.
+                </p>
+            </section>
+            <section>
+                <h2><u>Skills & Interests</u></h2>
+                <p>
+                    Product Leadership, Strategy, Software Engineering, Venture Capital, Entrepreneurship, Statistics, Health Tech, Music
+                </p>
+            </section>
+        </div>
+          <div id="contact_container" class="container">
+            <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+              <div align="center"><h2>Just for fun!</h2>
+                  <div>
+                      <img src="wen-icon.png" height="200", width="200">
+                  </div>
+                  <img src="wen.jpg" height="270", width="200">
+              </div>
+        </div>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
