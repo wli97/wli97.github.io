@@ -192,7 +192,7 @@ body {
     cursor:pointer;
 }
 .container section {
-    margin:8vh 0px;
+    margin:8vh 0px 16vh;
 }
 #used div{
     font-size:14px !important;
